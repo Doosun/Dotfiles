@@ -1,18 +1,12 @@
-prerequistites:
-neovim >= 0.9.1
-  
-python3.10-venv (if on popos)
-wezterm
-	curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
-	echo 'deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
-	sudo apt install wezterm-nightly
-nodejs
-	curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash - &&\
-	sudo apt-get install -y nodejs
-pip
-	wget https://bootstrap.pypa.io/get-pip.py
-	python get-pip.py
-
-on nvim first boot:
-:PackerSync
-
+how to install everything that we need:
+https://github.com/nvim-lua/kickstart.nvim?tab=readme-ov-file#linux-install
+https://github.com/jesseduffield/lazygit?tab=readme-ov-file#manual
+to install lazygit install homebrew:
+https://brew.sh/
+  brew install lazygit
+  brew install nodejs
+github easy install and setup on ubuntu:
+  sudo apt install pass
+  git config --global credential.credentialStore gpg
+  gpg --gen-key # take user id as output as <gpg-id>
+  pass init <gpg-id>
