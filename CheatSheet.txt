@@ -10,3 +10,5 @@ github easy install and setup on ubuntu:
   git config --global credential.credentialStore gpg
   gpg --gen-key # take user id as output as <gpg-id>
   pass init <gpg-id>
+tmux plugin manager:
+  https://github.com/tmux-plugins/tpm
