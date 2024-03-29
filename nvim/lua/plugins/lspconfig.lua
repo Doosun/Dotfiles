@@ -38,12 +38,24 @@ return {
             },
           },
         },
-        ansiblels = {},
-        yamlls = {},
+        ansiblels = {
+          filetypes = { "yaml.ansible" },
+        },
+        yamlls = {
+          settings = {
+            yaml = {
+              schemas = {
+                ["https://raw.githubusercontent.com/microsoft/azure-pipelines-vscode/master/service-schema.json"] = {
+                  "Pipelines/*.y*l",
+                  "pipelines/*.y*l",
+                },
+              },
+            },
+          },
+        },
         terraformls = {},
         bashls = {},
         powershell_es = {},
-        azure_pipelines_ls = {},
       },
       -- you can do any additional lsp server setup here
       -- return true if you don't want this server to be setup with lspconfig
