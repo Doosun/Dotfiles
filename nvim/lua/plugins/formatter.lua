@@ -22,7 +22,7 @@ return {
         -- is found.
         -- javascript = { { "prettierd", "prettier" } },
         yaml = { "prettierd" },
-        go = { "prettierd" },
+        go = { "goimports", "gofmt" },
       },
     },
   },
