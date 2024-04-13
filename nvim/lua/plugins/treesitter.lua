@@ -17,6 +17,7 @@ return {
         "vim",
         "yaml",
         "terraform",
+        "go",
       },
       -- Disable terraform treesitter on fixture files
       highlight = {
